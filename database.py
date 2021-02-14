@@ -2,11 +2,10 @@ import pymongo
 import mongoengine
 from datetime import date
 import datetime
-#login = ZeroAlpha, levilevi
 
 
 print("attempting to connect")
-cluster = pymongo.MongoClient("mongodb+srv://ZeroAlpha:levi@cluster0.pn90l.mongodb.net/Jobs?retryWrites=true&w=majority")
+cluster = pymongo.MongoClient("mongodb+srv://...)
 print("connected")
 db = cluster["Jobs"]
 jobCollection = db["Jobs"]
